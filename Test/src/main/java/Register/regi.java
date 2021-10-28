@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,9 +37,6 @@ public class regi {
      driver = new ChromeDriver();
      driver.get(baseUrl); 
     	
-  
-    	
-
     	  WebElement login=driver.findElement(By.xpath("/html/body/div[1]/div/header/div[2]/div/section[2]/nav/ul/li[1]/span/strong"));
     	  login.click();
     	  
@@ -117,15 +115,55 @@ public class regi {
                  excelUtils.setCellValue(i,9,"FAIL",excelFilePath);
              }
          }
-
-            
-         }
+       }
+         
+       @Test 
+        public void Login() throws InterruptedException, IOException {
+    	   
+    	   WebElement email=driver.findElement(By.id("fldEmailAddressSml"));
+           WebElement password=driver.findElement(By.id("fldPasswordSml"));
+           WebElement submitBtn=driver.findElement(By.id("login"));
+           WebElement search=driver.findElement(By.id("fldSearch"));
+           
+           excelUtils.setExcelFile(excelFilePath,"Sheet1");
+           
+           for(int i=9;i<=excelUtils.getRowCountInSheet();i++) {
+        	   
+        	   Thread.sleep(1000);
+               email.clear();
+               email.sendKeys(excelUtils.getCellData(i,3));
+               
+               password.clear();
+               Thread.sleep(1000);
+               password.sendKeys(excelUtils.getCellData(i,5));
+               
+               submitBtn.click();
+               Thread.sleep(3000);
+               
+           }
+       }
+       
+       @Test 
+       public void ZSearch() throws InterruptedException, IOException {
+    	   Thread.sleep(3000);
+    	   WebElement search=driver.findElement(By.id("fldSearch"));
+    	   Thread.sleep(3000);
+    	   search.sendKeys("dress", Keys.ENTER); 
+    	   
+    	   Thread.sleep(3000);
+    	   JavascriptExecutor js = (JavascriptExecutor) driver;
+           js.executeScript("window.scrollBy(0,3500)","");
+           Thread.sleep(3000);
+    	   
+       }
+       
          @AfterTest
+         
          public void closeBrowser() {
          	driver.manage().timeouts().implicitlyWait(2000,TimeUnit.SECONDS);
          	
              //closing the driver
-             driver.quit();
+            // driver.quit();
      	}
                  	
 	}

@@ -5,8 +5,9 @@
     <classes>
       <class name="Register.regi">
         <methods>
-          <include name="Registration"/>
+          <include name="ZSearch"/>
           <include name="launch"/>
+          <include name="Login"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- Register.regi -->
