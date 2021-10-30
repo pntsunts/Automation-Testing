@@ -5,7 +5,6 @@
     <classes>
       <class name="register.regi">
         <methods>
-          <include name="ZaddToCart"/>
           <include name="closeBrowser"/>
           <include name="Select"/>
           <include name="launch"/>

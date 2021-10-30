@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-30T16:39:25 SAST" name="Default suite" finished-at="2021-10-30T16:41:13 SAST" duration-ms="108213">
+  <suite started-at="2021-10-30T20:18:53 SAST" name="Default suite" finished-at="2021-10-30T20:20:16 SAST" duration-ms="82361">
     <groups>
     </groups>
-    <test started-at="2021-10-30T16:39:25 SAST" name="Default test" finished-at="2021-10-30T16:41:13 SAST" duration-ms="108213">
+    <test started-at="2021-10-30T20:18:53 SAST" name="Default test" finished-at="2021-10-30T20:20:16 SAST" duration-ms="82361">
       <class name="register.regi">
-        <test-method is-config="true" signature="launch()[pri:0, instance:register.regi@2473d930]" started-at="2021-10-30T16:39:25 SAST" name="launch" finished-at="2021-10-30T16:40:07 SAST" duration-ms="42373" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:register.regi@2473d930]" started-at="2021-10-30T20:18:53 SAST" name="launch" finished-at="2021-10-30T20:19:20 SAST" duration-ms="26155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="Registration()[pri:0, instance:register.regi@2473d930]" started-at="2021-10-30T16:40:07 SAST" name="Registration" finished-at="2021-10-30T16:40:29 SAST" duration-ms="21695" status="PASS">
+        <test-method signature="Registration()[pri:0, instance:register.regi@2473d930]" started-at="2021-10-30T20:19:20 SAST" name="Registration" finished-at="2021-10-30T20:19:37 SAST" duration-ms="16906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
-        <test-method signature="Login()[pri:1, instance:register.regi@2473d930]" started-at="2021-10-30T16:40:29 SAST" name="Login" finished-at="2021-10-30T16:40:44 SAST" duration-ms="15022" status="PASS">
+        <test-method signature="Login()[pri:1, instance:register.regi@2473d930]" started-at="2021-10-30T20:19:37 SAST" name="Login" finished-at="2021-10-30T20:19:44 SAST" duration-ms="7653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Search()[pri:2, instance:register.regi@2473d930]" started-at="2021-10-30T16:40:44 SAST" name="Search" finished-at="2021-10-30T16:40:51 SAST" duration-ms="7495" status="PASS">
+        <test-method signature="Search()[pri:2, instance:register.regi@2473d930]" started-at="2021-10-30T20:19:44 SAST" name="Search" finished-at="2021-10-30T20:19:51 SAST" duration-ms="7155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search -->
-        <test-method signature="ZaddToCart()[pri:3, instance:register.regi@2473d930]" started-at="2021-10-30T16:40:51 SAST" name="ZaddToCart" finished-at="2021-10-30T16:41:01 SAST" duration-ms="9741" status="PASS">
+        <test-method signature="ZaddToCart()[pri:3, instance:register.regi@2473d930]" started-at="2021-10-30T20:19:51 SAST" name="ZaddToCart" finished-at="2021-10-30T20:20:01 SAST" duration-ms="9822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ZaddToCart -->
-        <test-method signature="Select()[pri:4, instance:register.regi@2473d930]" started-at="2021-10-30T16:41:01 SAST" name="Select" finished-at="2021-10-30T16:41:13 SAST" duration-ms="11554" status="PASS">
+        <test-method signature="Select()[pri:4, instance:register.regi@2473d930]" started-at="2021-10-30T20:20:01 SAST" name="Select" finished-at="2021-10-30T20:20:12 SAST" duration-ms="10755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Select -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:register.regi@2473d930]" started-at="2021-10-30T16:41:13 SAST" name="closeBrowser" finished-at="2021-10-30T16:41:13 SAST" duration-ms="50" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:register.regi@2473d930]" started-at="2021-10-30T20:20:12 SAST" name="closeBrowser" finished-at="2021-10-30T20:20:16 SAST" duration-ms="3696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

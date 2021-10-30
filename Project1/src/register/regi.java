@@ -56,10 +56,10 @@ public class regi {
     @Test (priority = 0)
     public void Registration() throws IOException, InterruptedException {
     	
-        driver.manage().window().minimize();
-        Thread.sleep(3000);
-        driver.manage().window().maximize();
-		
+    	 WebElement cookies = driver.findElement(By.xpath("/html/body/div[3]/div/a"));
+         cookies.click();
+         Thread.sleep(1000);
+         
     	 WebElement title=driver.findElement(By.id("fldTitle"));
          WebElement firstName=driver.findElement(By.id("fldFirstName"));
          WebElement lastName=driver.findElement(By.id("fldLastName"));
@@ -132,10 +132,6 @@ public class regi {
        @Test (priority = 1)
         public void Login() throws InterruptedException, IOException {
     	   
-    	   driver.manage().window().minimize();
-           Thread.sleep(3000);
-           driver.manage().window().maximize();
-    	   
     	   WebElement login=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div/main/div/article/div[2]/aside/section[1]/a"));
     	   login.click();
     	   
@@ -204,14 +200,16 @@ public class regi {
     	   addButton.click();
     	   
        }
+//    
        
          @AfterTest
          
-         public void closeBrowser() {
+         public void closeBrowser() throws InterruptedException {
          	driver.manage().timeouts().implicitlyWait(2000,TimeUnit.SECONDS);
          	
              //closing the driver
-            // driver.quit();
+         	Thread.sleep(3000);
+           driver.quit();
      	}
                  	
 	}
