@@ -53,7 +53,7 @@ public class regi {
 	}
     
     
-    @Test
+    @Test (priority = 0)
     public void Registration() throws IOException, InterruptedException {
     	
         driver.manage().window().minimize();
@@ -129,8 +129,8 @@ public class regi {
          }
        }
          
-       @Test 
-        public void XLogin() throws InterruptedException, IOException {
+       @Test (priority = 1)
+        public void Login() throws InterruptedException, IOException {
     	   
     	   driver.manage().window().minimize();
            Thread.sleep(3000);
@@ -162,8 +162,8 @@ public class regi {
            }
        }
        
-       @Test 
-       public void YSearch() throws InterruptedException, IOException {
+       @Test (priority = 2)
+       public void Search() throws InterruptedException, IOException {
     	   Thread.sleep(3000);
     	   WebElement search=driver.findElement(By.id("fldSearch"));
     	  
@@ -172,19 +172,37 @@ public class regi {
     	   
     	   Thread.sleep(3000);
     	   
-    	   JavascriptExecutor js = (JavascriptExecutor) driver;
-           js.executeScript("window.scrollBy(0,3500)","");
-           Thread.sleep(3000);
+//    	   JavascriptExecutor js = (JavascriptExecutor) driver;
+//           js.executeScript("window.scrollBy(0,3500)","");
+//           Thread.sleep(3000);
     	   
        }
        
-       @Test
+       @Test (priority = 3)
        public void ZaddToCart() throws InterruptedException {
-    	   WebElement PlusButton =driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[5]/article[1]/div[4]/div[2]/a[1]/div[1]"));
     	   Thread.sleep(3000);
     	   
+    	  // WebElement PlusButton =driver.findElement(By.xpath("/html/body/div[1]/div/div/main/div/div[2]/div[2]/div/div[2]/div[2]/article/div[1]/a/div/img"));
+    	   WebElement PButton = driver.findElement(By.xpath("/html/body/div[1]/div/div/main/div/div[2]/div[2]/div/div[2]/div[5]/article/div[1]/a/div[2]/img"));
+    	   Thread.sleep(3000);  
     	   JavascriptExecutor js = (JavascriptExecutor) driver;
-    	   js.executeScript("arguments[0].click();", PlusButton);
+    	   js.executeScript("arguments[0].click();", PButton);
+    	   Thread.sleep(3000);
+    	   
+    	   
+    	   
+       }
+       @Test (priority = 4)
+       public void Select() throws InterruptedException {
+    	   Thread.sleep(3000);
+    	   
+    	   WebElement SizeButton = driver.findElement(By.xpath("/html/body/div[1]/div/div/main/div[1]/div[2]/div/div[2]/div[2]/div[1]/div/div[2]/ul/li[2]/div"));
+    	   WebElement addButton = driver.findElement(By.xpath("/html/body/div[1]/div/div/main/div[1]/div[2]/div/div[2]/div[2]/div[2]/div/div[2]/span"));
+    	   Thread.sleep(3000);
+    	   SizeButton.click();
+    	   Thread.sleep(3000);
+    	   addButton.click();
+    	   
        }
        
          @AfterTest
