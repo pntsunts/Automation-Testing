@@ -262,7 +262,7 @@ public class Hotel {
               }
              
  	        
- 	       // Thread.sleep(5000);
+ 	        Thread.sleep(5000);
          
  	        File screenshot1 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); 
  	        FileUtils.copyFile(screenshot1, new File("C:\\Users\\Peter\\Desktop\\sm\\"+"Screen"+"1.png"));
