@@ -119,20 +119,14 @@ public class Hotel {
     	WebElement password = driver.findElement(By.id("password"));
     	WebElement login = driver.findElement(By.id("login"));
     	
-    	excelUtils.setExcelFile(excelFilePath,"Sheet1");
+   	    Thread.sleep(1000);
+     	username.sendKeys("Refilwe94");
+   	 
+   	    Thread.sleep(1000);
+    	password.sendKeys("123456");
     	
-    	for(int i=5;i<=excelUtils.getRowCountInSheet();i++) {
-    	
-	    	username.clear();
-	   	    Thread.sleep(1000);
-	     	username.sendKeys(excelUtils.getCellData(i,6));
-	   	 
-	   	    password.clear();
-	   	    Thread.sleep(1000);
-	    	password.sendKeys(excelUtils.getCellData(i,7));
-	    	
-	    	login.click();
-    	}
+    	login.click();
+   
     }
     
     @Test (priority = 2)

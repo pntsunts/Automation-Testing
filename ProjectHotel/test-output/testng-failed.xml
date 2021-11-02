@@ -5,8 +5,12 @@
     <classes>
       <class name="landingPage.Hotel">
         <methods>
+          <include name="closeBrowser"/>
+          <include name="searchHotel"/>
           <include name="bookHotel"/>
+          <include name="selectHotel"/>
           <include name="launch"/>
+          <include name="Login"/>
         </methods>
       </class> <!-- landingPage.Hotel -->
     </classes>

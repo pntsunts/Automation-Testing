@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-02T12:39:17 SAST" name="Default suite" finished-at="2021-11-02T12:41:48 SAST" duration-ms="150356">
+  <suite started-at="2021-11-02T14:23:29 SAST" name="Default suite" finished-at="2021-11-02T14:26:04 SAST" duration-ms="155305">
     <groups>
     </groups>
-    <test started-at="2021-11-02T12:39:17 SAST" name="Default test" finished-at="2021-11-02T12:41:48 SAST" duration-ms="150356">
+    <test started-at="2021-11-02T14:23:29 SAST" name="Default test" finished-at="2021-11-02T14:26:04 SAST" duration-ms="155305">
       <class name="landingPage.Hotel">
-        <test-method is-config="true" signature="launch()[pri:0, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T12:39:17 SAST" name="launch" finished-at="2021-11-02T12:39:37 SAST" duration-ms="19850" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T14:23:29 SAST" name="launch" finished-at="2021-11-02T14:23:53 SAST" duration-ms="23376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="Registration()[pri:0, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T12:39:37 SAST" name="Registration" finished-at="2021-11-02T12:40:38 SAST" duration-ms="61329" status="PASS">
+        <test-method signature="Registration()[pri:0, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T14:23:53 SAST" name="Registration" finished-at="2021-11-02T14:24:56 SAST" duration-ms="63707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
-        <test-method signature="Login()[pri:1, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T12:40:39 SAST" name="Login" finished-at="2021-11-02T12:40:44 SAST" duration-ms="5071" status="PASS">
+        <test-method signature="Login()[pri:1, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T14:24:56 SAST" name="Login" finished-at="2021-11-02T14:25:01 SAST" duration-ms="4716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="searchHotel()[pri:2, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T12:40:44 SAST" name="searchHotel" finished-at="2021-11-02T12:41:23 SAST" duration-ms="39188" status="PASS">
+        <test-method signature="searchHotel()[pri:2, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T14:25:01 SAST" name="searchHotel" finished-at="2021-11-02T14:25:38 SAST" duration-ms="37196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchHotel -->
-        <test-method signature="selectHotel()[pri:3, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T12:41:23 SAST" name="selectHotel" finished-at="2021-11-02T12:41:28 SAST" duration-ms="4861" status="PASS">
+        <test-method signature="selectHotel()[pri:3, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T14:25:38 SAST" name="selectHotel" finished-at="2021-11-02T14:25:45 SAST" duration-ms="6283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectHotel -->
-        <test-method signature="bookHotel()[pri:4, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T12:41:28 SAST" name="bookHotel" finished-at="2021-11-02T12:41:44 SAST" duration-ms="16016" status="PASS">
+        <test-method signature="bookHotel()[pri:4, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T14:25:45 SAST" name="bookHotel" finished-at="2021-11-02T14:26:00 SAST" duration-ms="15902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookHotel -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T12:41:44 SAST" name="closeBrowser" finished-at="2021-11-02T12:41:48 SAST" duration-ms="3866" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:landingPage.Hotel@769f71a9]" started-at="2021-11-02T14:26:01 SAST" name="closeBrowser" finished-at="2021-11-02T14:26:04 SAST" duration-ms="3988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
