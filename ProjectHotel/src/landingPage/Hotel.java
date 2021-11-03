@@ -174,11 +174,11 @@ public class Hotel {
             if (errormessage.isDisplayed() ) {
              	
              	excelUtils.setCellValue(i,9,"PASS",excelSearchData);
-             } else {
-                 
-                 excelUtils.setCellValue(i,9,"FAIL",excelSearchData);
-             }
-            
+//             } else {
+//                 
+//                 excelUtils.setCellValue(i,9,"FAIL",excelSearchData);
+//             }
+            }
 	        
 	        Thread.sleep(3000);
         
