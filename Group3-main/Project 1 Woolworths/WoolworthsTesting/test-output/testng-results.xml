@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-03T13:40:52 SAST" name="Default suite" finished-at="2021-11-03T13:43:15 SAST" duration-ms="143084">
+    <groups>
+    </groups>
+    <test started-at="2021-11-03T13:40:52 SAST" name="Default test" finished-at="2021-11-03T13:43:15 SAST" duration-ms="143084">
+      <class name="testCases.TCLogin">
+        <test-method is-config="true" signature="launch()[pri:0, instance:testCases.TCLogin@747ddf94]" started-at="2021-11-03T13:40:52 SAST" name="launch" finished-at="2021-11-03T13:41:11 SAST" duration-ms="19521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="a()[pri:0, instance:testCases.TCLogin@747ddf94]" started-at="2021-11-03T13:41:11 SAST" name="a" finished-at="2021-11-03T13:41:52 SAST" duration-ms="40422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method signature="b()[pri:1, instance:testCases.TCLogin@747ddf94]" started-at="2021-11-03T13:41:52 SAST" name="b" finished-at="2021-11-03T13:42:47 SAST" duration-ms="55697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+        <test-method signature="c()[pri:2, instance:testCases.TCLogin@747ddf94]" started-at="2021-11-03T13:42:47 SAST" name="c" finished-at="2021-11-03T13:42:49 SAST" duration-ms="1642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c -->
+        <test-method signature="d()[pri:3, instance:testCases.TCLogin@747ddf94]" started-at="2021-11-03T13:42:49 SAST" name="d" finished-at="2021-11-03T13:43:15 SAST" duration-ms="25680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d -->
+      </class> <!-- testCases.TCLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
