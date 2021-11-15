@@ -67,6 +67,16 @@ public class mainCase {
     		 register.clickTerms();
     		 register.clickRegister();
     		 Thread.sleep(1000);
+    		 
+    		 WebElement errormessage = driver.findElement(By.className("reg_error"));
+             
+             if (errormessage.isDisplayed() ) {
+              	
+              	excelUtils.setCellValue(i,9,"PASS",excelFilePath);
+              } else {
+                  
+                  excelUtils.setCellValue(i,9,"FAIL",excelFilePath);
+              }
     	 }
      }
 }
