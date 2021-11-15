@@ -51,8 +51,23 @@ public class mainCase {
      
      @Test (priority = 0)
      public void Registration() throws IOException, InterruptedException {
-    	 homePage home = new homePage(driver);
+    	 
+    	 RegistrationPage register = new RegistrationPage(driver);
+    	 
+    	 excelUtils.setExcelFile(excelFilePath,"Sheet1");
+    	 
+    	 for(int i=1;i<=excelUtils.getRowCountInSheet();i++) {
+    		 
+    		 register.username(excelUtils.getCellData(i,0));
+    		 register.password(excelUtils.getCellData(i,1));
+    		 register.confiPass(excelUtils.getCellData(i,2));
+    		 register.fullName(excelUtils.getCellData(i,3));
+    		 register.email(excelUtils.getCellData(i,4));
+    		 register.captchaText(excelUtils.getCellData(i,5));
+    		 register.clickTerms();
+    		 register.clickRegister();
+    		 Thread.sleep(1000);
+    	 }
      }
- 
 }
   
