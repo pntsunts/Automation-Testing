@@ -15,11 +15,15 @@ WebDriver driver;
 	
 	By registerBtn = By.xpath("/html/body/table[2]/tbody/tr/td[2]/form/table/tbody/tr[7]/td/a");
 	
+	By BacktoLogin = By.xpath("//*[@id=\"register_form\"]/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a");
+	
 	public void clickLogin() {
 		driver.findElement(loginBtn).click();
 	}
 	public void clickRegister() {
 		driver.findElement(registerBtn).click();
 	}
-
+	public void BacktoLoginBtn() {
+		driver.findElement(BacktoLogin).click();
+	}
 }

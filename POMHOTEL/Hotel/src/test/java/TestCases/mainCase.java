@@ -54,6 +54,8 @@ public class mainCase {
     	 
     	 RegistrationPage register = new RegistrationPage(driver);
     	 
+    	 homePage home = new homePage(driver);
+    	 
     	 excelUtils.setExcelFile(excelFilePath,"Sheet1");
     	 
     	 for(int i=1;i<=excelUtils.getRowCountInSheet();i++) {
@@ -77,6 +79,21 @@ public class mainCase {
                   
                   excelUtils.setCellValue(i,9,"FAIL",excelFilePath);
               }
+    	 }
+    	 home.BacktoLoginBtn();
+     }
+     @Test (priority = 1)
+     public void Login() {
+    	 
+    	 homePage home = new homePage(driver);
+    	
+    	 RegistrationPage Login = new RegistrationPage(driver);
+    	 
+    	 for(int i=5;i<=excelUtils.getRowCountInSheet();i++) {
+    		 Login.username(excelUtils.getCellData(i,6));
+    		 Login.password(excelUtils.getCellData(i,7));
+    		 home.clickLogin();
+    		 
     	 }
      }
 }

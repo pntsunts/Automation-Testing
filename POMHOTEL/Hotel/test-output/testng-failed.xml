@@ -6,7 +6,7 @@
       <class name="TestCases.mainCase">
         <methods>
           <include name="launch"/>
-          <include name="Registration"/>
+          <include name="Login"/>
         </methods>
       </class> <!-- TestCases.mainCase -->
     </classes>

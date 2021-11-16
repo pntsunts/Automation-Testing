@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-15T16:02:52 SAST" name="Default suite" finished-at="2021-11-15T16:03:42 SAST" duration-ms="50678">
+  <suite started-at="2021-11-16T19:06:21 SAST" name="Default suite" finished-at="2021-11-16T19:07:00 SAST" duration-ms="39031">
     <groups>
     </groups>
-    <test started-at="2021-11-15T16:02:52 SAST" name="Default test" finished-at="2021-11-15T16:03:42 SAST" duration-ms="50678">
+    <test started-at="2021-11-16T19:06:21 SAST" name="Default test" finished-at="2021-11-16T19:07:00 SAST" duration-ms="39031">
       <class name="TestCases.mainCase">
-        <test-method is-config="true" signature="launch()[pri:0, instance:TestCases.mainCase@436813f3]" started-at="2021-11-15T16:02:52 SAST" name="launch" finished-at="2021-11-15T16:03:25 SAST" duration-ms="33595" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:TestCases.mainCase@436813f3]" started-at="2021-11-16T19:06:21 SAST" name="launch" finished-at="2021-11-16T19:06:42 SAST" duration-ms="21299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="Registration()[pri:0, instance:TestCases.mainCase@436813f3]" started-at="2021-11-15T16:03:25 SAST" name="Registration" finished-at="2021-11-15T16:03:42 SAST" duration-ms="16954" status="PASS">
+        <test-method signature="Registration()[pri:0, instance:TestCases.mainCase@436813f3]" started-at="2021-11-16T19:06:43 SAST" name="Registration" finished-at="2021-11-16T19:06:57 SAST" duration-ms="14880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
+        <test-method signature="Login()[pri:1, instance:TestCases.mainCase@436813f3]" started-at="2021-11-16T19:06:57 SAST" name="Login" finished-at="2021-11-16T19:07:00 SAST" duration-ms="2722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
       </class> <!-- TestCases.mainCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
