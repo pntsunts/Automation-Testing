@@ -19,6 +19,7 @@ import Constants.Constants;
 import Constants.Excel;
 import Pages.homePage;
 import Pages.RegistrationPage;
+import Pages.Search;
 
 public class mainCase {
     
@@ -96,5 +97,28 @@ public class mainCase {
     		 
     	 }
      }
+     
+     @Test (priority = 2)
+     public void SearchHotel() throws IOException, InterruptedException{
+    	 
+    	 Search search = new Search(driver);
+    	 
+    	 excelUtils.setExcelFile(excelSearchData,"Sheet1");
+    	 
+    	 for(int i=1;i<=excelUtils.getRowCountInSheet();i++) {
+    		 
+    		 search.location(excelUtils.getCellData(i,0));
+    		 search.hotels(excelUtils.getCellData(i,1));
+    		 search.roomType(excelUtils.getCellData(i,2));
+    		 search.numberOfRooms(excelUtils.getCellData(i,3));
+    		 search.checkInDate(excelUtils.getCellData(i,4));
+    		 search.checkOutDate(excelUtils.getCellData(i,5));
+    		 search.udult(excelUtils.getCellData(i,6));
+    		 search.children(excelUtils.getCellData(i,7));
+    		 search.search();
+    		 Thread.sleep(1000);
+    	 }
+    	 }
+     
 }
   
